@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/test-shufti-app/static/css/main.129f8572.css",
-    "main.js": "/test-shufti-app/static/js/main.c6cb2a71.js",
-    "static/js/787.cdc81576.chunk.js": "/test-shufti-app/static/js/787.cdc81576.chunk.js",
-    "service-worker.js": "/test-shufti-app/service-worker.js",
-    "index.html": "/test-shufti-app/index.html",
-    "main.129f8572.css.map": "/test-shufti-app/static/css/main.129f8572.css.map",
-    "main.c6cb2a71.js.map": "/test-shufti-app/static/js/main.c6cb2a71.js.map",
-    "787.cdc81576.chunk.js.map": "/test-shufti-app/static/js/787.cdc81576.chunk.js.map"
+    "main.css": "/test-kyc-vendor/static/css/main.129f8572.css",
+    "main.js": "/test-kyc-vendor/static/js/main.3cd614f9.js",
+    "static/js/787.cdc81576.chunk.js": "/test-kyc-vendor/static/js/787.cdc81576.chunk.js",
+    "service-worker.js": "/test-kyc-vendor/service-worker.js",
+    "index.html": "/test-kyc-vendor/index.html",
+    "main.129f8572.css.map": "/test-kyc-vendor/static/css/main.129f8572.css.map",
+    "main.3cd614f9.js.map": "/test-kyc-vendor/static/js/main.3cd614f9.js.map",
+    "787.cdc81576.chunk.js.map": "/test-kyc-vendor/static/js/787.cdc81576.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.129f8572.css",
-    "static/js/main.c6cb2a71.js"
+    "static/js/main.3cd614f9.js"
   ]
 }
