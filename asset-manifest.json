@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-shufti-app/static/css/main.129f8572.css",
+    "main.js": "/test-shufti-app/static/js/main.c6cb2a71.js",
+    "static/js/787.cdc81576.chunk.js": "/test-shufti-app/static/js/787.cdc81576.chunk.js",
+    "service-worker.js": "/test-shufti-app/service-worker.js",
+    "index.html": "/test-shufti-app/index.html",
+    "main.129f8572.css.map": "/test-shufti-app/static/css/main.129f8572.css.map",
+    "main.c6cb2a71.js.map": "/test-shufti-app/static/js/main.c6cb2a71.js.map",
+    "787.cdc81576.chunk.js.map": "/test-shufti-app/static/js/787.cdc81576.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.129f8572.css",
+    "static/js/main.c6cb2a71.js"
+  ]
+}
