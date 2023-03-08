@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { fileToBase64, verifyDocument } from './lib/shufti';
+import { saveVerifyResult } from './lib/db';
 
 function App() {
+  const [loading, setLoading] = React.useState(false);
+  const [verifyResult, setVerifyResult] = React.useState(null);
+  const handleSelectFile = async (e) => {
+    setLoading(true);
+    setVerifyResult(null);
+    const file = e.target.files[0];
+    const imageBase64 = await fileToBase64(file);
+    const verifyResult = await verifyDocument(imageBase64);
+    setLoading(false);
+    setVerifyResult(verifyResult);
+    saveVerifyResult(verifyResult);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        loading ? <div>Loading, please wait!</div> : <input type='file' accept='image/*' onChange={handleSelectFile} text="Select file" />
+      }
+      {
+        <pre className='output'>{verifyResult ? JSON.stringify(verifyResult, null, 2) : "output will show here..."}</pre>
+      }
     </div>
   );
 }
