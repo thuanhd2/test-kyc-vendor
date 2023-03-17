@@ -92,17 +92,19 @@ async function postRequest(token, payload, secretKey) {
     console.error(error);
   }
 }
+
 async function fileToBase64(file) {
-  return new Promise((resolve, reject) => {
+  try {
     const reader = new FileReader();
     reader.readAsDataURL(file);
-    reader.onload = () => {
-      const base64 = reader.result.split(',')[1];
-
-      resolve(`data:image/jpeg;base64,${base64}`);
-    };
-    reader.onerror = error => reject(error);
-  });
+    await new Promise(resolve => {
+      reader.onload = () => resolve();
+    });
+    const base64 = reader.result.split(',')[1];
+    return base64;
+  } catch (error) {
+    throw error;
+  }
 }
 
 export {
