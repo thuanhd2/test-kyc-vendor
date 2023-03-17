@@ -6,7 +6,8 @@ import { saveVerifyResult } from './lib/db';
 function App() {
   const [loading, setLoading] = React.useState(false);
   const [verifyResult, setVerifyResult] = React.useState(null);
-  const handleSelectFile = async (e) => {
+  const onFileSelected = async (e) => {
+    setLoading(true);
     setLoading(true);
     setVerifyResult(null);
     const file = e.target.files[0];
@@ -19,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {
-        loading ? <div>Loading, please wait!</div> : <input type='file' accept='image/*' onChange={handleSelectFile} text="Select file" />
+        loading ? <div>Loading, please wait!</div> : <input type='file' accept='image/*' onChange={onFileSelected} text="Select file" />
       }
       {
         <pre className='output'>{verifyResult ? JSON.stringify(verifyResult, null, 2) : "output will show here..."}</pre>
