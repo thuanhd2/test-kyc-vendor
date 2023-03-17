@@ -20,7 +20,8 @@ const verifyDocument = async imageBase64 => {
   // const YOUR_CLIENT_ID = 'Df02pDEFsM7QxY6TwhYPAIrGDjJ1aEXPJKGIHRHLQBiveE7hcz1678256102';
   // const YOUR_SECRET_KEY = '$2y$10$aOwUQJEE15YOV6KFIV1/ouaPgdeI61JhbBdo/cJAX41d4fVEOOynm';
   // localStorage.setItem('shufti.client_id', "Df02pDEFs*******6102");
-  // localStorage.setItem('shufti.client_id', "$2y$*******nm")
+  // localStorage.setItem('shufti.secret_key', "$2y$*******nm")
+  console.log("To setup keys for shufti: \nlocalStorage.setItem('shufti.client_id', 'Df02pDEFs*******6102'); \nlocalStorage.setItem('shufti.secret_key', '$2y$*******nm');");
   const YOUR_CLIENT_ID = localStorage.getItem('shufti.client_id');
   const YOUR_SECRET_KEY = localStorage.getItem('shufti.secret_key');
 
